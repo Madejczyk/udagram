@@ -3,16 +3,16 @@ services:
   reverseproxy:
     build:
       context: .
-      image: your_dockerhub_username_lowercase/reverseproxy
+    image: madejczyk/reverseproxy
   backend_user:
     build:
       context: ../../udacity-c3-restapi-user
-      image: your_dockerhub_username_lowercase/udacity-restapi-user
+    image: madejczyk/udacity-restapi-user
   backend_feed:
     build:
       context: ../../udacity-c3-restapi-feed
-      image: your_dockerhub_username_lowercase/udacity-restapi-feed
+    image: madejczyk/udacity-restapi-feed
   frontend:
     build:
       context: ../../udacity-c3-frontend
-      image: your_dockerhub_username_lowercase/udacity-frontend:local
+    image: madejczyk/udacity-frontend:local
